@@ -1,0 +1,65 @@
+/*  
+Theme Name: FLSCR2
+Theme URI: http://horizontalwp.com
+Description: A full-screen Wordpress theme built on jQuery, css3, and html5 canvas.
+Version: 1.5
+Author: Greg Ponchak
+Author URI: http://gregponchak.com/
+
+*/
+
+/*basic*/
+* { list-style:none;margin:0;padding:0;text-decoration:none; }
+a { border-bottom:1px solid #aaa;color:#000; }
+a:hover { border-bottom:1px solid #000; }
+a img { border:0; }
+body { background:#fff;color:#000;font-family:helvetica, arial, sans-serif;font-size:9.5pt;line-height:16pt; }
+.clear { clear:both; }
+#content { bottom:0;left:0;overflow:hidden;position:absolute;right:0;top:0; }
+#cover { background:#fff url(loading.gif) no-repeat center center;bottom:0;left:0;position:absolute;right:0;top:0; }
+h1 { font-size:1.9em;line-height:1.4em; }
+h2 { font-size:1.7em;line-height:1.4em; }
+h3 { font-size:1.5em;line-height:1.4em; }
+h4 { font-size:1.3em;line-height:1.4em; }
+h5 { font-size:1.1em;line-height:1.4em; }
+.images,.overflow,.section { float:left; }
+#infinite { width:999999px; }
+.overflow { cursor:move;position:absolute; }
+.overflow img, .overflow video, .overflow iframe, .overflow object, .overflow canvas, .overflow .wp-caption { position:absolute; }
+.wp-caption-text { display:none; }
+
+/*posts*/
+.post { float:left;position:relative; }
+.postTitle { display:none; }
+.section { float:left;overflow:hidden;position:relative; }
+.hold { display:none; }
+.info {  }
+
+/*nav/controls*/
+#nav { color:#fff;font-size:10.5pt;line-height:15pt;position:absolute;right:20px;top:20px; }
+#nav ul.navItem { float:right;margin-left:30px;position:relative;width:130px; }
+#nav ul.navItem li { display:block;position:relative; }
+#nav ul.navItem li ul { display:none; }
+#nav ul.navItem li ul a, #nav.dark ul.navItem li ul a, #nav.light ul.navItem li ul a { font-weight:normal; }
+#nav ul.navItem li a, #nav.dark ul.navItem li a { border:0;border-bottom:1px solid transparent;color:#fff;font-weight:bold;padding-bottom:1px;-webkit-font-smoothing: antialiased; }
+#nav ul.navItem li a:hover, #nav.dark ul.navItem li a:hover { border-bottom:1px solid #fff; }
+#nav.light ul.navItem li a { color:#000; }
+#nav.light ul.navItem li a:hover { border-bottom:1px solid #000; }
+#title { color:#fff;font-size:15pt;font-weight:bold;left:20px;position:absolute;top:20px;-webkit-font-smoothing: antialiased; }
+#title a, #title.dark a { border:0;color:#fff; }
+#title.light a { color:#000; }
+
+#showInfo, #showInfo.dark { color:#fff;display:none;font-size:10.5pt;font-weight:bold;left:20px;line-height:15pt;position:absolute;right:330px;top:100px;-webkit-font-smoothing: antialiased;max-width:500px; }
+#showInfo.dark * { color:#fff; }
+#showInfo.light, #showInfo.light * { color:#000; }
+#showInfo .hold { display:block; }
+
+#drop { bottom:0;position:absolute; }
+.paginate a { display:none; }
+.paginatel { left:-35px;position:absolute;top:0; }
+.paginater { position:absolute;right:0;top:0; }
+#nav ul.navItem li .paginate a:hover { border:0; }
+
+/*responsive*/
+body.responsive #nav { left:-10px;top:75px;right:auto; }
+body.responsive #showInfo { bottom:20px;left:20px;right:20px;top:auto;width:auto; }
